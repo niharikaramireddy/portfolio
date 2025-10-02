@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Niharika Ramireddy – Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+<style>
+  body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    margin: 0;
+    background: #000; /* Black background */
+    color: #fff;      /* All font white */
+  }
+
+  /* White links with neon hover */
+  a {
+    color: #fff;
+    transition: 0.3s;
+  }
+  a:hover {
+    color: #0ff; /* Neon cyan hover */
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.05); /* Slight transparency */
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+  }
+</style>
+</head>
+
+<body>
+
+<div class="flex flex-col min-h-screen" id="app">
+
+  <!-- Header -->
+  <header class="shadow-md sticky top-0 z-10 bg-black bg-opacity-80">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex items-center gap-6">
+        <img src="C:\Users\nihar\OneDrive - Carleton University\Documents\profilepic.jpeg"  alt="Niharika Ramireddy headshot"
+             class="w-28 h-28 rounded-full object-cover shadow ring-4 ring-white"/>
+        <div>
+          <h1 class="text-3xl font-bold text-white">Niharika Ramireddy</h1>
+          <p class="text-lg text-white">Bachelor of Computer Science – Carleton University</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container mx-auto p-6 flex-1 text-white">
+
+    <!-- HOME -->
+    <section id="home" class="page">
+      <div class="card">
+        <h2 class="text-3xl font-bold mb-4">👩‍💻 About Me</h2>
+        <p class="leading-7 mb-6">
+          I am a dedicated Computer Science student at Carleton University with strong interests in software 
+          development, and algorithmic problem-solving. I enjoy building real-world projects that 
+          are functional, efficient, and user-friendly. My technical experience includes developing systems in 
+          <strong>C++, Java, and Python</strong>, along with modern web technologies.
+        </p>
+        <p class="leading-7 mb-6">
+          Beyond academics, I have contributed to collaborative projects such as an <em>Insulin Pump Simulator</em>, 
+          <em>Elevator Scheduling System</em>, and a <em>Real-time Chat Application</em>. These experiences 
+          taught me not only clean code design and testing but also teamwork, leadership, and adaptability.  
+          I am passionate about continuously learning new tools, whether in cloud computing, automation, or 
+          advanced software frameworks. 
+        </p>
+        <p class="leading-7 mb-6">
+          Outside of coding, I thrive in activities that test discipline and focus—like swimming, skating, 
+          and distance running. I believe balance between academics, creativity, and hobbies strengthens 
+          my productivity and mindset.
+        </p>
+        
+        <!-- Hobbies -->
+        <h3 class="text-2xl font-semibold mt-6 mb-3">🎉 Hobbies</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Swimming:</strong> I love the calm and focus of the water — it’s my favorite way to recharge.</li>
+          <li><strong>Ice Skating:</strong> Gliding across the ice keeps me active and adventurous.</li>
+          <li><strong>Running:</strong> Running clears my head and fuels creativity — perfect for problem-solving.</li>
+          <li><strong>Crafting:</strong> Creating handmade items helps me relax, spark creativity, and express myself in unique ways.</li>
+        </ul>
+
+        <!-- Links -->
+        <div class="flex flex-wrap gap-3 mt-6 mb-6">
+          <a href="https://www.linkedin.com/in/niharika-ramireddy-546803243/" target="_blank"
+             class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 shadow">
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/niharikaramireddy" target="_blank"
+             class="inline-flex items-center gap-2 bg-gray-900 text-white px-5 py-2.5 rounded-lg hover:bg-gray-800 shadow">
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        <!-- Contact -->
+        <div class="grid sm:grid-cols-2 gap-4">
+          <p><strong>Email:</strong> 
+             <a class="underline hover:text-cyan-400"
+                href="mailto:niharika.r.r1212@gmail.com">niharika.r.r1212@gmail.com</a></p>
+          <p><strong>Phone:</strong> 
+             <a class="underline hover:text-cyan-400"
+                href="tel:+13432622160">+1 (343) 262 2160</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="page hidden">
+      <div class="card">
+        <h2 class="text-3xl font-bold mb-6">🎓 Education</h2>
+        <h3 class="text-xl font-semibold">Bachelor of Computer Science (BSc)</h3>
+        <p>Carleton University — Ottawa, ON</p>
+        <p>Expected Graduation: April 2026</p>
+        <p class="mt-3">Focused coursework in data structures, algorithms, software engineering, and web development.
+           Learning object-oriented programming, database systems, and introductory operating systems has given me a strong technical foundation.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="page hidden">
+      <div class="card">
+        <h2 class="text-3xl font-bold mb-6">🛠 Skills</h2>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-semibold mb-2">Programming</h3>
+            <ul class="list-disc list-inside">
+              <li>Java, Python, C++</li>
+              <li>JavaScript/TypeScript</li>
+              <li>Algorithm Design & Problem Solving</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Web Development</h3>
+            <ul class="list-disc list-inside">
+              <li>HTML</li>
+              <li>Node.js</li>
+              <li>Socket.io</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Tools & Concepts</h3>
+            <ul class="list-disc list-inside">
+              <li>Git & GitHub</li>
+              <li>Agile & OOP principles</li>
+              <li>Unit Testing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+<section id="projects" class="page hidden">
+  <div class="card">
+    <h2 class="text-3xl font-bold mb-6">🚀 Projects</h2>
+    <div class="grid lg:grid-cols-2 gap-6">
+
+      <!-- Portfolio Website Project -->
+      <article class="card">
+        <h3 class="text-xl font-semibold">Personal Portfolio Website</h3>
+        <p>
+          Designed and developed this responsive portfolio website from scratch using 
+          <strong>HTML, CSS, and JavaScript</strong>.  
+          Implemented interactive navigation, dynamic background themes, and 
+          structured sections for About, Education, Skills, Projects, and Volunteer Experience.  
+          The website showcases my technical journey, hobbies, and professional goals in a clean, 
+          user-friendly design.
+        </p>
+        <p class="text-sm mt-2"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+      </article>
+
+      <article class="card">
+        <h3 class="text-xl font-semibold">Tandem t:slim Insulin Pump Simulator</h3>
+        <p>Developed a medical device simulator in C++ using Qt Framework. Implemented insulin delivery, user profiles, and bolus calculator with a focus on safe, clean OOP design and testing.</p>
+        <p class="text-sm mt-2"><strong>Tech:</strong> C++, Qt</p>
+      </article>
+
+      <article class="card">
+        <h3 class="text-xl font-semibold">Ravens Elevator System</h3>
+        <p>Built a multi-elevator scheduling simulation in C++ and Qt. Designed algorithms to reduce average wait times by 20% while ensuring modular architecture and performance testing.</p>
+        <p class="text-sm mt-2"><strong>Tech:</strong> C++, Qt</p>
+      </article>
+
+      <article class="card">
+        <h3 class="text-xl font-semibold">File Management System</h3>
+        <p>Built a check-in/check-out file manager in C++ with custom data handling and encapsulated class structure. Designed for efficient data retrieval and system organization.</p>
+        <p class="text-sm mt-2"><strong>Tech:</strong> C++</p>
+      </article>
+
+      <article class="card">
+        <h3 class="text-xl font-semibold">Real-time Chat Application</h3>
+        <p>Developed with Node.js and Socket.io. Implemented chat rooms, typing indicators, and real-time updates for smooth and interactive communication.</p>
+        <p class="text-sm mt-2"><strong>Tech:</strong> Node.js, Socket.io</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- VOLUNTEER -->
+    <section id="volunteer" class="page hidden">
+      <div class="card">
+        <h2 class="text-3xl font-bold mb-6">🤝 Volunteer</h2>
+        <div class="space-y-6">
+          <div class="card">
+            <h3 class="text-xl font-semibold">March Break Camp Volunteer</h3>
+            <p>March 2025</p>
+            <p>Supported kids aged 6–12 with educational and recreational activities. Ensured safety, inclusivity, and fun during daily sessions.</p>
+          </div>
+          <div class="card">
+            <h3 class="text-xl font-semibold">Note-Taker</h3>
+            <p>January 2025</p>
+            <p>Created high-quality class notes for students with accessibility needs. Ensured accuracy, timeliness, and clarity of materials.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="sticky bottom-0 z-10 shadow-md bg-black bg-opacity-80">
+    <div class="container mx-auto grid grid-cols-5 text-center text-white">
+      <a href="#home"      class="nav px-3 py-3 hover:text-cyan-400 nav-active">Home</a>
+      <a href="#education" class="nav px-3 py-3 hover:text-cyan-400">Education</a>
+      <a href="#skills"    class="nav px-3 py-3 hover:text-cyan-400">Skills</a>
+      <a href="#projects"  class="nav px-3 py-3 hover:text-cyan-400">Projects</a>
+      <a href="#volunteer" class="nav px-3 py-3 hover:text-cyan-400">Volunteer</a>
+    </div>
+  </nav>
+
+</div>
+
+<script>
+  const pages = Array.from(document.querySelectorAll('.page'));
+  const navLinks = Array.from(document.querySelectorAll('.nav'));
+
+  function show(hash){
+    const target = hash || '#home';
+    pages.forEach(s => s.classList.toggle('hidden', ('#'+s.id)!==target));
+    navLinks.forEach(a => a.classList.toggle('nav-active', a.getAttribute('href')===target));
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  navLinks.forEach(a => a.addEventListener('click', e=>{
+    e.preventDefault();
+    const target = a.getAttribute('href');
+    history.pushState(null,'',target);
+    show(target);
+  }));
+
+  window.addEventListener('popstate', ()=> show(location.hash||'#home'));
+  show(location.hash||'#home');
+</script>
+
+</body>
+</html>
